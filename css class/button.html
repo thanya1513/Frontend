@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>My First Page</title>
+    <style>
+      .btn:hover {
+        background-color: lightskyblue;
+      }
+      .heading:hover {
+        font-size: 100px;
+      }
+      li:nth-child(2n + 1) {
+        /*this gives a particular list color by giving the parameter values like 1,2,3,2n, 3n, 2n+1 etc */
+        background-color: lightcoral;
+      }
+
+      p::first-letter {
+        /* first letter font gets increase */
+        font-size: 200px;
+      }
+
+      p::first-line {
+        /* first line background color gets change */
+        background-color: lightseagreen;
+      }
+
+      p::selection {
+        background-color: lightskyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">Button</button>
+    <h1 class="heading">Hello Text</h1>
+    <ul>
+      <li>Heading 1</li>
+      <li>Heading 2</li>
+      <li>Heading 3</li>
+      <li>Heading 4</li>
+      <li>Heading 5</li>
+      <li>Heading 6</li>
+      <li>Heading 7</li>
+      <li>Heading 8</li>
+      <li>Heading 9</li>
+    </ul>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolores
+      aspernatur officiis explicabo, ex adipisci reiciendis quo nemo quibusdam
+      tempora inventore perspiciatis eum incidunt. Officiis placeat nisi
+      adipisci. Sit, ipsum!
+    </p>
+  </body>
+</html>

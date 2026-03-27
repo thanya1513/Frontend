@@ -1,0 +1,222 @@
+<html>
+  <head>
+    <title>Sample Bootstrap Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .image-slide {
+        width: 100%;
+        height: 100%;
+      }
+
+      .input-search {
+        width: 400px;
+      }
+
+      .add-space {
+        margin-left: 200px;
+      }
+
+      .three {
+        width: 200px;
+        height: 100px;
+      }
+
+      .main{
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-around;
+        margin-top: 100px;
+      }
+
+      .main img{
+        width:400px;
+        height:auto;
+        object-fit: cover;
+        margin-right: 150px;
+      }
+
+      .one, .two, .three{
+        margin-bottom: 20px;
+        margin:0 30px;
+      }
+      
+      .img{
+        width:100%;
+      }
+
+      .h1{
+        text-align:center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!--Navbar start-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">NavBar
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 input-search"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 add-space">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar end-->
+
+    <!--Carousel starts-->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://www.indiafoodnetwork.in/h-upload/2025/02/25/1484691-pretty-cafes-cover.webp"
+            class="d-block w-100 image-slide"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR33ikkTAE7WSMFk5cnGOcCayEz0pN0dB10QQ&s"
+            class="d-block w-100 image-slide"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/60f976b72612757791a5df66/1d014828-05ea-4ac3-a4ec-c3ea168adeb8/InCommon_0725_LizClayman_0212.jpg."
+            class="d-block w-100 image-slide"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--Carousel ends-->
+
+<div class="main">
+    <div class="one">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrc2tPztEd3gDD0g_tw2hoFgQzY6oclHt3FQ&s"
+      />
+      <h1><u>Cappuccino</u></h1>
+    </div>
+    <div class="two">
+      <img
+        src="https://images.ctfassets.net/v601h1fyjgba/71VWCR6Oclk14tsdM9gTyM/6921cc6b21746f62846c99fa6a872c35/Iced_Latte.jpg"
+      />
+      <h1><u>Latte</u></h1>
+    </div>
+    <div class="three">
+      <img
+        src="https://supermancooks.com/wp-content/uploads/2023/03/chocolate-pancakes-featured.jpg"
+      />
+      <h1><u>Pancake</u></h1>
+    </div>
+</div>
+
+</body>
+
+    <!--Adding script code-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

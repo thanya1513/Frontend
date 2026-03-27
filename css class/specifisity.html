@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Learn Specificity</title>
+    <style>
+      .heading {
+        color: blue;
+      }
+
+      #hello {
+        color: chocolate;
+      }
+
+      h1 {
+        color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading" id="hello" style="color: red">Heading One</h1>
+  </body>
+</html>
+<!--
+specificity
+inline selector has the highest priority
+id selector (#hello)
+class selector (.heading)
+element selector (h1)
+-->
