@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>"Learning JS Events"</title>
+  </head>
+  <body>
+    <h1 id="heading"></h1>
+    <h1 id="blur"></h1>
+
+    <lable for="un">UserName</lable>
+    <input type="text" id="un" name="un" onblur="handleBlur()" />
+    <button
+      onclick="handleClick()"
+      onmouseover="handleMouseOver()"
+      onmouseout="handleMouseOut()"
+    >
+      submit
+    </button>
+    <script>
+      function handleClick() {
+        document.getElementById("heading").innerHTML = "Hello";
+      }
+
+      function handleMouseOver() {
+        document.getElementById("heading").innerHTML = "Mouse Over";
+      }
+
+      function handleMouseOut() {
+        document.getElementById("heading").innerHTML = "Mouse Out";
+      }
+
+      function handleBlur() {
+        document.getElementById("blur").innerHTML = "Handle Blur is Called";
+      }
+    </script>
+  </body>
+</html>
+
+<!--
+onclick = to select a document by using getelementbyid and giving an innerhtml
+onblur = if there is an input box if we come out without entering then it get triggers
+onmouseover = if we over a mouse to submit button it throws the message
+onmouseout = if we over out from the element we get an message
+-->

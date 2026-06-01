@@ -1,0 +1,242 @@
+<html>
+  <head>
+    <title>Example WebPage</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .add-space {
+        margin-left: 500px;
+      }
+
+      .navbar {
+        background-color: black;
+      }
+      .navbar-brand {
+        margin-left: 60px;
+        font-size: 35px;
+        color: red;
+      }
+      .carousel {
+        height: 400px; /* reduce height */
+        margin-left: 60px; /* adjust this value */
+        margin-top: 20px;
+        margin-right: 60px;
+      }
+
+      .carousel img {
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .add-space {
+        background-color: black !important;
+      }
+
+      .add-space .nav-link {
+        color: white !important;
+      }
+
+      .add-space .nav-link:hover {
+        color: red;
+      }
+
+      h1 {
+        color: white;
+        margin-left: 60px;
+        margin-top: 30px;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .card img {
+        height: 200px; /* reduce height */
+        object-fit: cover; /* keeps image clean */
+      }
+
+      .card {
+        border: none;
+      }
+
+      .card-body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Navbar starts-->
+    <nav class="navbar navbar-expand-lg bg-black navbar-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <b>StreamHub</b> </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 add-space">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Series</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                My List
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar ends-->
+
+    <!--Carousel starts-->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://www.heavenofhorror.com/wp-content/uploads/2025/11/Stranger-Things-Season-5-Volume-1-Netflix-Review.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--Carousel ends-->
+
+    <h1><b>Trending Movies</b></h1>
+
+    <!--Card component starts-->
+    <div class="card-scroller">
+      <div class="main">
+        <!--Card section starts-->
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://gabbinggeek2.wordpress.com/wp-content/uploads/2015/10/m9kosh1.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Movie One</h5>
+            <p class="card-text">Thriller</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/3/38/Squid_Game_season_2_poster.png/250px-Squid_Game_season_2_poster.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Movie Two</h5>
+            <p class="card-text">Drama</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://w0.peakpx.com/wallpaper/502/592/HD-wallpaper-alien-movie-vintage-alien-movie-blue-horror-poster.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Movie Three</h5>
+            <p class="card-text">Adventure</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfyphyHEGFKStVrahf0Wp-qHWm_uofVuxMEw&s"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Movie Four</h5>
+            <p class="card-text">Sci-fic</p>
+          </div>
+        </div>
+
+        <!--Card section ends-->
+      </div>
+    </div>
+    <!--Card component ends-->
+
+    <!--Script start-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!--Script ends-->
+  </body>
+</html>
